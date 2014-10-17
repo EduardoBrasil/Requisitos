@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.13)  17 OCT 2014 09:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.13)  17 OCT 2014 10:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1221,12 +1221,12 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 [2
 
 ] (./conteudo/conteudo.tex (./conteudo/introducao.tex
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 35.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 43.
 (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 35.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 43.
 ) (./conteudo/fundamentacao.tex (/usr/share/texlive/texmf-dist/tex/latex/ucs/da
 ta/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
@@ -1245,22 +1245,18 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 31.
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) <conteudo/velocity.jpg, id=69, 316.18124pt x 210.7875pt>
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.34 
+      [1] <conteudo/velocity.jpg, id=78, 316.18124pt x 210.7875pt>
 File: conteudo/velocity.jpg Graphic file (type jpg)
 <use conteudo/velocity.jpg>
 Package pdftex.def Info: conteudo/velocity.jpg used on input line 40.
 (pdftex.def)             Requested size: 241.84843pt x 161.23582pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (./conteudo/metodologia.texpdfTeX warning (ext4): destination with the same i
-dentifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.5 	\item p
-            rocesso de estudo das fontes bibliográficas [1]) (./conteudo/equip
-e.tex [2 <./conteudo/burnup.jpg> <./conteudo/velocity.jpg>])) (./main.bbl [3]) 
-
+) (./conteudo/metodologia.tex [2 <./conteudo/burnup.jpg> <./conteudo/velocity.j
+pg>]) (./conteudo/equipe.tex)) (./main.bbl [3]) 
 AED: lastpage setting LastPage
 [4
 
@@ -1296,7 +1292,7 @@ nts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb><
 /usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/p
 ublic/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/sh
 are/texmf/fonts/type1/public/lm/lmtt8.pfb>
-Output written on main.pdf (7 pages, 418964 bytes).
+Output written on main.pdf (7 pages, 420568 bytes).
 PDF statistics:
  160 PDF objects out of 1000 (max. 8388607)
  131 compressed objects within 2 object streams
