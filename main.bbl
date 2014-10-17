@@ -1,0 +1,18 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{1.50 }
+
+\bibitem{crispin2009agile}
+\abntrefinfo{Crispin e Gregory}{CRISPIN; GREGORY}{2009}
+{CRISPIN, L.; GREGORY, J. \emph{Agile testing: A practical guide for testers
+  and agile teams}. [S.l.]: Pearson Education, 2009.}
+
+\bibitem{Advpdf}
+\abntrefinfo{Mitchell, Oldham e Samuel}{MITCHELL; OLDHAM; SAMUEL}{2001}
+{MITCHELL, M.; OLDHAM, J.; SAMUEL, A. \emph{Advanced Linux Programming}.
+[S.l.], 2001.}
+
+\end{thebibliography}
