@@ -8,5 +8,6 @@
 \contentsline {subsubsection}{Objetivos Espec\IeC {\'\i }ficos}{1}{section*.4}
 \contentsline {subsection}{\numberline {1 .3}Justificativas}{1}{subsection.0.1.3}
 \contentsline {section}{\numberline {2 }Fundamenta\IeC {\c c}\IeC {\~a}o te\IeC {\'o}rica}{1}{section.0.2}
-\contentsline {section}{\numberline {3 }Metodologia}{3}{section.0.3}
-\contentsline {section}{\numberline {4 }Equipe}{3}{section.0.4}
+\contentsline {section}{\numberline {3 }Problemas}{3}{section.0.3}
+\contentsline {section}{\numberline {4 }Metodologia}{3}{section.0.4}
+\contentsline {section}{\numberline {5 }Equipe}{3}{section.0.5}
