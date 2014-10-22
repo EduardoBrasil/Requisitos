@@ -9,8 +9,8 @@ do: *.tex
 		pdflatex main;\
 		echo -n "Buscando citações";\
 		grep -v "\%" conteudo/*.tex > search.temp;\
-		if grep '\\cite{'  search.temp -qn;\
-		then \
+		#if grep '\\cite{'  search.temp -qn;\
+		#then \
 			echo " ";\
 			echo -n "Montando bibliografias..." ;\
 			pdflatex main;\
@@ -22,13 +22,13 @@ do: *.tex
 			pdflatex -interaction=batchmode main;\
 			pdflatex -interaction=batchmode main;\
 			echo "Feito.";\
-		else \
-			pdflatex main;\
-			makeglossaries main;\
-			makeindex main.glo -s main.ist -t main.glg -o main.gls;\
-			pdflatex main;\
-			echo " ... Sem bibliografias";\
-		fi;\
+		#else \
+		#	pdflatex main;\
+		#	makeglossaries main;\
+		#	makeindex main.glo -s main.ist -t main.glg -o main.gls;\
+		#	pdflatex main;\
+		#	echo " ... Sem bibliografias";\
+		#fi;\
 	else \
 		echo "Arquivo de bibliografias inexistente.";\
 	fi;

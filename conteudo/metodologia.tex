@@ -1,9 +1,131 @@
+\section{Escolha da Metodologia}
 
-[Consiste na maneira de trabalhar o objeto de pesquisa, as ações pelas quais serão alcançados os resultados esperados da pesquisa.
-Descrever:
+Cada uma das rotas possíveis para o desenvolvimento de software, Ágil e Tradicional, possuem características bem definidas, por isso em alguns casos é necessário a utilização de algumas práticas de cada uma delas para poder otimizar o processo.
+
+Afim de chegar à melhor prática possível para o projeto a seguir foi desenvolvida uma tabela com cada uma das características de projeto, equipe e negócio, analisando cada uma delas para identificar em qual das duas rotas o projeto se encaixa melhor, e o resultado foi a tabela \ref{tab:caracteristcas_do_projeto}.
+
+\begin{table}[h]
+    \begin{tabular}{|p{2cm}|p{5cm}|c|c|p{4cm}|}
+        %------- cabeçalho--------
+        \hline
+        \textbf{Itens} &
+        \textbf{Características} &
+        \textbf{Tradicional} &
+        \textbf{Ágil} &
+        \textbf{Descrição}
+        \\ 
+        %-------------------------
+        \hline
+        \multirow{2}{*}{
+            %-------------------------
+            \textbf{Projeto}} &
+                %-------------------------
+                Entregas parciais &
+                 &
+                x &
+                Utilização de Sprint para entregar software funcional em partes.
+                \\
+                \cline{2-5} 
+                %-------------------------
+                 &
+                Mudança de equipe de newline desenvolvimento &
+                x &
+                 &
+                Documentação do projeto necessária  ara apresentar para a nova equipe de desenvolvimento. 
+                \\ 
+                \hline
+            %-------------------------
+        %-------------------------
+        \multirow{3}{*}{
+            %-------------------------
+            \textbf{Equipe}} &
+                %-------------------------
+                Reuniões frequentes com o cliente &
+                 &
+                x &
+                Cliente faz parte da equipe de desenvolvimento, com reuniões semanais
+                \\
+                \cline{2-5}
+                %------------------------- 
+                 &
+                Maior afinidade com metodologia ágil &
+                 &
+                x &
+                A equipe prefere desenvolver em ágil
+                \\
+                \cline{2-5} 
+                %-------------------------
+                 &
+                Equipe pequena &
+                 &
+                x &
+                A equipe conhece todo o código programação em pares
+                \\
+                \hline
+            %-------------------------
+        %-------------------------
+        \multirow{2}{*}{
+            %-------------------------
+            \textbf{Negócio}}
+                %-------------------------
+                 &
+                Requisitos mutáveis &
+                 &
+                x &
+                Provável evolução do sistema após o fim da primeira etapa de projeto
+                \\
+                \cline{2-5}
+                %-------------------------
+                 &
+                Documentação extensiva para manter o sistema &
+                x &
+                 &
+                Utlização de metodologia tradicional para documentação do projeto
+                \\
+                \hline
+            %-------------------------
+        %-------------------------
+    \end{tabular}
+    \caption{Tabela de características do projeto}
+    \label{tab:caracteristcas_do_projeto}
+\end{table}
+
+O trabalho será feito em cima de uma metodologia Híbrida, onde a rastreabilidade e a definição dos requisitos será feita com base no método 
+tradicional, contendo:
+
 \begin{itemize}
-	\item processo de estudo das fontes bibliográficas
-	\item Instrumentos e fontes para coleta de dados
-	\item Processos e métodos para a realização do trabalho (uso de ferramentas, linguagens de especificação, descrição das fases do trabalho de pesquisa, etc)
+    \item{Problemas}
+    \item{Necessidades}
+    \item{Características}
+    \item{Casos de uso}
 \end{itemize}
-]
+
+A escolha da metodologia Tradicional nesta etapa, se originou pelo fato de que o projeto em si está sendo tratado como um projeto grande, onde uma documentação e uma análise inicial do contexto de negocio mais completa trariam maiores benefícios, como uma previsibilidade de recursos, estabilidade do processo, assim como uma alta garantia das funcionalidades do projeto.
+
+No quesito de extensa documentação, para o desenvolvimento deste projeto é um ponto forte devido ao fato de que provavelmente a equipe atual, com o tempo, será substituída por uma nova.
+
+Porém, como a equipe de desenvolvimento é pequena, possui um conhecimento maior em desenvolvimento ágil e o PO possui bastante tempo disponível para reuniões e desenvolvimento junto da equipe, o desenvolvimento do projeto e o nível de aproximação cliente/equipe seguirão a metodologia ágil, buscando maior garantia de qualidade de desenvolvimento.
+
+Outro ponto importante a ser frizado é a possibilidade de que os requisitos mudem após a primeira etapa de desenvolvimento, já que o sistema que será implementado durante a disciplina de Requisitos de Software abrangerá apenas uma pequena parte do sistema completo. 
+    
+Para o desenvolvimento do sistema, alguns valores da metodologia ágil serão utilizados. Tais como:
+
+\begin{itemize}
+    \item{Responder a mudanças}
+    \item{Colaboração com cliente}
+    \item{Entrega contínua de software}
+    \item{Em intervalor regulares, refletir em como ficar mais efetivo}
+    \item{Desenvolvimento dividido em Sprints de 15 dias cada}
+    \item{Desenvolvimento em pares para nivelar o conhecimento da equipe}
+\end{itemize}
+
+A definição destas atividades foi devida à possibilidade de frequentes reuniões entre a equipe e o cliente. 
+
+Para este projeto estamos seguindo padrão definido por \cite{cho2009hybrid} colocado a seguir:
+
+\begin{itemize}
+    \item{Através dos indivíduos e interações, definir um processo para o decorrer do projeto}
+    \item{Através de documentação, ter software funcional que agregue valor ao cliente}
+    \item{Colaboração do cliente antes de negociações e contratos}
+    \item{Através de um plano, responder as mudanças até a chegada ao destino}
+\end{itemize}
