@@ -1,5 +1,4 @@
-\subsection{Contexto} % (fold)
-\label{sub:contexto}
+\subsection{Introdução}
 
 O desenvolvimento de software perpassa inúmeras fases até que o mesmo seja concluído e entregue ao cliente, uma dessas fases, e provavelmente a mais importante é a fase em que devemos entender o problema do usuário, compreender exatamente o que o mesmo necessita e apresentá-lo uma solução. Nesta fase, negociações serão feitas, tanto sobre funcionalidades do sistema quanto custo do projeto, tempo para conclusão do mesmo e restrições de projeto.
 
@@ -7,29 +6,87 @@ O resultado desta fase é uma documentação robusta, principalmente ao utilizar
 
 Com esta documentação em mãos, os desenvolvedores podem começar o desenvolvimento do sistema, porém muitos problemas surgem tanto na construção da documentação quanto na utilização da mesma para o desenvolvimento do software. A gerência, organização, classificação e rastreabilidade dos requisitos geram inúmeros problemas, já que o conteúdo é muito extenso para ser organizado facilmente de forma adequada. A partir deste problema, surge a necessidade da utilização de ferramentas que auxiliem na organização, classificação e rastreabilidade dos requisitos.
 
-\subsection{Objetivos} % (fold)
-\label{sub:objetivos}
-\subsubsection{Objetivos Gerais}
+\subsubsection{Propósito}
 
-O objetivos gerais deste projeto é a fase de requisitos e o início da implementação de uma ferramenta de gerência de requisitos \opensource{} que auxilie o usuário durante todo o processo de requisitos, desde a escolha da metodologia utilizada ao controle da rastreabilidade dos requisitos.
+Ao analisar este documento, todos os \textit{stakeholders} deverão compreender todo o contexto de negócio, os objetivos e escopo do projeto, assim como, entender o problema que deverá ser resolvido, quais necessidades do cliente deverão ser analisadas e quais serão as funcionalidades do sistema, assim como todas as suas características.
 
-\subsubsection{Objetivos Específicos}
+\subsubsection{Escopo}
 
-Objetivos especificos são pequenos marcos que serão realizados durante o projeto, são eles:
+Este documento abrange todo o contexto do desenvolvimento de software voltado para a fase de requisitos, desde a elicitação à gerência de requisitos. Encontra-se neste documento, o problema de negócio do cliente, suas reais necessidades, as características das mesmas e todas as funcionalidades do sistema.
+
+Dessa forma, a partir deste documento, pode-se obter conhecimento total sobre o projeto de desenvolvimento da ferramenta de gerência de requisitos, desde a metodologia utilizada para o desenvolvimento até a forma de implementação do sistema.
+%Descreve brevemente o escopo deste documento de visão, incluindo a quais programas, projetos, aplicativos e processos de negócios o documento está associado. Inclui qualquer outra coisa que este documento afete ou influencie.
+
+\subsubsection{Definições, acrônimos e abreviações}
 
 \begin{itemize}
-	\item Entender e registrar os problemas da \er.
-	\item Entender e registrar as necessidades da \er.
-	\item Entender as caractrísticas da \er.
-	\item Definir requisitos funcionais para o desenvolvimento da ferramenta.
-	\item Definir requisitos não-funcionais para o desenvolvimento da ferramenta.
-	\item Definir casos de uso do desenvolvimento da ferramenta.
-	\item Definir escopo da ferramenta.
+	\item \textit{Stakeholders}:
+
+		Todos as partes envolvidas no contexto do sistema, desde o cliente e seus funcionarios até a equipe de desenvolvimento do sistema. Todos os interessados na solução de software são considerados stakeholders do sistema.
+
+	\item \textit{Requisitos}: 
+
+		Engloba tudo que o software deve possuir para solucionar o problema em questão, desde funcionalidades do sistema até características que o software deve possuir.
+
+	\item \textit{Engenharia de Requisitos}:
+
+		Engenharia de Requisitos é um conceito que engloba todo um contexto de desenvolvimento de software que envolve elicitação de requisitos, negociação, verificação e validação, e documentação e gerência de requisitos para o desenvolvimento de um sistema computacional. O uso da palavra \textit{Engenharia} garante que técnicas sistematicas serão utilizadas para que os requisitos sejam completos, corretos e consistentes.
+
+	\item \textit{Fishbone}:
+
+		Consiste em uma técnica utilizada para o reconhecimento do problema macro do cliente. A utilização desta técnica garante uma facilidade maior para entender o problema de negócio.
+
+	\item \textit{Framework do problema}:
+
+		Consiste em uma técnica para organizar e auxiliar o entendimento do problema, apresentar os stakeholders afetados pelo problema, o impacto que o problema gera para o cliente e uma possivel soluçao bem sucedida. A utilização do framework garante maior facilidade no entendimento do contexto do cliente.
+
+	\item \textit{Framework de Necessidades}:
+
+		Consiste em uma técnica para oganizar uma tabela identificando Necessidade, Problema, Solução atual e Solução Proposta. A utilização do framework de necessidade garante um melhor entendimento da necessidade do cliente.
+ 
+	\item \textit{WorkShop}
+
+		 Workshop é uma tecnica no qual os partipantes discutem um problema em comum onde são aplicadas tecnicas que ajudam em uma melhor identificação das necessidades do cliente e ajudam a melhorar o rendimento das reuniões.
+
+	\item \textit{Brainstorming}
+
+		 Brainstorming é uma tecnica que consiste em uma dinamica de grupo para desenvolver ideias a respeito de um determinado assunto e para a resolução de problemas.
+
+	\item \textit{Casos de Uso}:
+
+		 Caso de uso define uma sequência de ações que produz um resultado de valor observável. Os casos de uso fornecem estrutura para expressar requisitos funcionais no contexto dos processos de negócio e de sistema.
 \end{itemize}
+% Define todos os termos, acrônimos e abreviações necessários para interpretar a visão corretamente. Essas informações podem ser fornecidas por referência ao glossário do projeto, que pode ser desenvolvido online no repositório do RM.
 
-\subsection{Justificativas} % (fold)
-\label{sub:justificativas}
+\subsubsection{Referências}
+% Lista todos os documentos aos quais o documento de visão faz referência. Identifique cada documento por título, número de relatório (se aplicável), data e organização de publicação. Especifique as origens a partir das quais os leitores podem obter as referências; as origens estão disponíveis de maneira ideal no RM ou em outros repositórios online. Essas informações podem ser fornecidas por referência para um apêndice ou para outro documento.
 
-Inúmeras ferramentas já foram criadas para esta finalidade, contudo as ferramentas gratuitas não possuem a qualidade necessária para desenvolvimento de grandes e críticos sistemas. A partir daí, surge a necessidade da criação de uma nova ferramenta \opensource{} com qualidade suficiente para suprir as necessidades de todos os desenvolvedores de software do mundo.
+\subsubsection{Visão geral}
+%Descreve o conteúdo do documento de visão e explica como o documento é organizado.
 
-Outra vantagem de uma ferramenta \opensource{} é a possibilidade de qualquer interessado em manter a ferramenta estar permitido a fazer o mesmo, o que facilita uma futura evolução do projeto, mantendo ele sempre capaz de se manter reais as necessidades do usuário.
+%\subsection{Objetivos} % (fold)
+%\label{sub:objetivos}
+%\subsubsection{Objetivos Gerais}
+
+%O objetivos gerais deste projeto é a fase de requisitos e o início da implementação de uma ferramenta de gerência de requisitos \opensource{} que auxilie o usuário durante todo o processo de requisitos, desde a escolha da metodologia utilizada ao controle da rastreabilidade dos requisitos.
+
+%\subsubsection{Objetivos Específicos}
+
+%Objetivos especificos são pequenos marcos que serão realizados durante o projeto, são eles:
+
+%\begin{itemize}
+%	\item Entender e registrar os problemas da \er.
+%	\item Entender e registrar as necessidades da \er.
+%	\item Entender as caractrísticas da \er.
+%	\item Definir requisitos funcionais para o desenvolvimento da ferramenta.
+%	\item Definir requisitos não-funcionais para o desenvolvimento da ferramenta.
+%	\item Definir casos de uso do desenvolvimento da ferramenta.
+%	\item Definir escopo da ferramenta.
+%\end{itemize}
+
+%\subsection{Justificativas} % (fold)
+%\label{sub:justificativas}
+
+%Inúmeras ferramentas já foram criadas para esta finalidade, contudo as ferramentas gratuitas não possuem a qualidade necessária para desenvolvimento de grandes e críticos sistemas. A partir daí, surge a necessidade da criação de uma nova ferramenta \opensource{} com qualidade suficiente para suprir as necessidades de todos os desenvolvedores de software do mundo.
+
+%Outra vantagem de uma ferramenta \opensource{} é a possibilidade de qualquer interessado em manter a ferramenta estar permitido a fazer o mesmo, o que facilita uma futura evolução do projeto, mantendo ele sempre capaz de se manter reais as necessidades do usuário.
