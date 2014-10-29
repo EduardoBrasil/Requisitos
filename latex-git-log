@@ -188,7 +188,8 @@ sub latex_escape {
     $paragraph =~ s/Ã /à/g;
     $paragraph =~ s/Ã¬/ì/g;
     $paragraph =~ s/Ã§/ç/g;
-
+    $paragraph =~ s/Ã´/ô/g;
+    
     # Now add the dollars around each \backslash
     $paragraph =~ s/(\\backslash)/\$$1\$/g;
     return $paragraph;
