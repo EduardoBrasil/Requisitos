@@ -1,53 +1,55 @@
 
-O desenvolvimento de software perpassa inúmeras fases até que o mesmo seja concluído e entregue ao cliente, uma dessas fases, e provavelmente a mais importante é a fase em que devemos entender o problema do usuário, compreender exatamente o que o mesmo necessita e apresentá-lo uma solução. Nesta fase, negociações serão feitas, tanto sobre funcionalidades do sistema quanto custo do projeto, tempo para conclusão do mesmo e restrições de projeto.
+O desenvolvimento de \sw~ passa por inúmeras fases até que seja concluído e entregue ao cliente, uma delas, e provavelmente a mais importante, é a \er, onde devemos entender o problema do usuário, compreender suas necessidades e apresentá-lo a uma solução. Nesta fase negociações serão feitas, tanto sobre funcionalidades do sistema quanto custos, tempo para conclusão e restrições de qualquer tipo.
 
-O resultado desta fase é uma documentação robusta, principalmente ao utilizar metodologias tradicionais de desenvolvimento. Nesta documentação se encontram as funcionalidades do software, as características do mesmo e as restrições de projeto, podendo abranger todo o software ou apenas uma primeira etapa de desenvolvimento, como é feito em metodologias ágeis, estes ítens são conhecidos como requisitos.
+O resultado desta fase é uma documentação robusta, principalmente ao utilizar metodologias tradicionais de desenvolvimento, que pregam o processo acima das pessoas. Nesta documentação encontram-se as funcionalidades do \sw, suas as características e restrições, podendo abranger todo o \sw~ ou apenas uma primeira etapa de desenvolvimento, como é feito em metodologias ágeis.
 
-Com esta documentação em mãos, os desenvolvedores podem começar o desenvolvimento do sistema, porém muitos problemas surgem tanto na construção da documentação quanto na utilização da mesma para o desenvolvimento do software. A gerência, organização, classificação e rastreabilidade dos requisitos geram inúmeros problemas, já que o conteúdo é muito extenso para ser organizado facilmente de forma adequada. A partir deste problema, surge a necessidade da utilização de ferramentas que auxiliem na organização, classificação e rastreabilidade dos requisitos.
+A tarefa de construir e manter a documentação necessária em um projeto de \sw~ possui diversos problemas relacionados a diversas áreas diferentes, como por exemplo a gerência, organização, classificação e rastreabilidade dos requisitos. Surge assim a necessidade da utilização de ferramentas que possam amenizar as dificuldades encontradas.
 
 \subsection{Propósito}
 
-Ao analisar este documento, todos os \stakeholder~ deverão compreender todo o contexto de negócio, os objetivos e escopo do projeto, assim como, entender o problema que deverá ser resolvido, quais necessidades do cliente deverão ser analisadas e quais serão as funcionalidades do sistema, assim como todas as suas características.
+Ao ler este documento todos os \stakeholder~ deverão compreender todo o contexto de negócio, os objetivos e escopo do projeto, assim como, entender o problema que deverá ser resolvido, quais necessidades do cliente deverão ser analisadas e quais serão as funcionalidades do sistema.
 
 \subsection{Escopo}
 
-Este documento abrange todo o contexto do desenvolvimento de software voltado para a fase de requisitos, desde a elicitação à gerência de requisitos. Encontra-se neste documento, o problema de negócio do cliente, suas reais necessidades, as características das mesmas e todas as funcionalidades do sistema.
+Este documento abrange contexto do desenvolvimento de \sw~ voltado para a \er, desde a elicitação à gerência de requisitos, e tem como objetivo levar o entendimento do projeto a qualquer leitor, desde leigos até especialistas na área. Encontra-se neste documento, o problema de negócio do cliente, suas reais necessidades, as características e as funcionalidades do sistema que foram possíveis mapear.
 
-Dessa forma, a partir deste documento, pode-se obter conhecimento total sobre o projeto de desenvolvimento da ferramenta de gerência de requisitos, desde a metodologia utilizada para o desenvolvimento até a forma de implementação do sistema.
-%Descreve brevemente o escopo deste documento de visão, incluindo a quais programas, projetos, aplicativos e processos de negócios o documento está associado. Inclui qualquer outra coisa que este documento afete ou influencie.
+Dessa forma, a partir deste documento, pode-se obter conhecimento total sobre o projeto de desenvolvimento da \nomeferramenta, desde a metodologia utilizada até a forma de implementação do sistema.
 
 \subsection{Definições, acrônimos e abreviações}
 
+Durante o processo de elicitação e gerenciamento de requisitos é necessário que todos os envolvidos possam se comunicar sem que existam falhas de entendimento, para isso foi desenvolvido um sumário contendo nomes que serão utilizados no processo, assim como suas definições.
+
 \begin{itemize}
-	\item \stakeholder:
 
-		Todos as partes envolvidas no contexto do sistema, desde o cliente e seus funcionarios até a equipe de desenvolvimento do sistema. Todos os interessados na solução de software são considerados stakeholders do sistema.
+	\item \stakeholder
 
-	\item \textit{Requisitos}: 
+		Todas as partes envolvidas no contexto do sistema, desde o cliente e seus funcionarios até a equipe de desenvolvimento do sistema. Todos os interessados na solução de \sw~ são considerados stakeholders do sistema \cite{sommerville2003engenharia}.
 
-		Engloba tudo que o software deve possuir para solucionar o problema em questão, desde funcionalidades do sistema até características que o software deve possuir.
+	\item \textit{Requisitos} 
 
-	\item \textit{Requisitos Funcionais}:
+		Engloba tudo que o \sw~ deve possuir para solucionar o problema em questão, desde funcionalidades do sistema até características que o \sw~ deve possuir.
 
-		São chamados de requisitos funcionais todos aqueles que apresentam as funcionalidades do sistema. \cite{sommerville2003engenharia}.
+	\item \textit{Requisitos Funcionais}
 
-	\item \textit{Requisitos não Funcionais}:
+		São chamados de requisitos funcionais todos aqueles que apresentam as funcionalidades do sistema \cite{sommerville2003engenharia}.
 
-		São chamados requisitos não funcionais todos aqueles que apresentam as características do sistema, incluindo compatibilidade, o tempo de resposta ou qualquer outra exigência que não inclua funcionalidades. \cite{sommerville2003engenharia}.
+	\item \textit{Requisitos não Funcionais}
 
-	\item \textit{Engenharia de Requisitos}:
+		São chamados requisitos não funcionais todos aqueles que apresentam as características do sistema, incluindo compatibilidade, o tempo de resposta ou qualquer outra exigência que não inclua funcionalidades \cite{sommerville2003engenharia}.
 
-		Engenharia de Requisitos é um conceito que engloba todo um contexto de desenvolvimento de software que envolve elicitação de requisitos, negociação, verificação e validação, e documentação e gerência de requisitos para o desenvolvimento de um sistema computacional. O uso da palavra \textit{Engenharia} garante que técnicas sistematicas serão utilizadas para que os requisitos sejam completos, corretos e consistentes \cite{de2004analise}. 
+	\item \textit{Engenharia de Requisitos}
 
-	\item \textit{Fishbone}:
+		Engenharia de Requisitos é um conceito que engloba todo um contexto de desenvolvimento de \sw~ que envolve elicitação de requisitos, negociação, verificação e validação, e documentação e gerência de requisitos para o desenvolvimento de um sistema computacional. O uso da palavra \textit{Engenharia} garante que técnicas sistematicas serão utilizadas para que os requisitos sejam completos, corretos e consistentes \cite{de2004analise}. 
 
-		Consiste em uma técnica utilizada para o reconhecimento do problema macro do cliente. A utilização desta técnica garante uma facilidade maior para entender o problema de negócio.
+	\item \textit{Fishbone}
 
-	\item \textit{Framework do problema}:
+		Consiste em uma técnica utilizada para o reconhecimento do macro problema do cliente. A utilização desta técnica garante uma facilidade maior para entender onde a solução deve atuar.
+
+	\item \textit{Framework do problema}
 
 		Consiste em uma técnica para organizar e auxiliar o entendimento do problema, apresentar os stakeholders afetados pelo problema, o impacto que o problema gera para o cliente e uma possivel soluçao bem sucedida. A utilização do framework garante maior facilidade no entendimento do contexto do cliente.
 
-	\item \textit{Framework de Necessidades}:
+	\item \textit{Framework de Necessidades}
 
 		Consiste em uma técnica para oganizar uma tabela identificando Necessidade, Problema, Solução atual e Solução Proposta. A utilização do framework de necessidade garante um melhor entendimento da necessidade do cliente.
  
@@ -59,61 +61,28 @@ Dessa forma, a partir deste documento, pode-se obter conhecimento total sobre o 
 
 		 Brainstorming é uma tecnica que consiste em uma dinamica de grupo para recolher ideias a respeito de um determinado assunto e para a resolução de problemas.
 
-	\item \textit{Casos de Uso}:
+	\item \textit{Casos de Uso}
 
 		 Caso de uso define uma sequência de ações que produz um resultado de valor observável. Os casos de uso fornecem estrutura para expressar requisitos funcionais no contexto dos processos de negócio e de sistema.
 
-	\item \textit{Sprint}:
+	\item \textit{Sprint}
 
 		Representa o espaço de tempo no qual deverão ser realizadas atividades previamente estabelecidas para a resolução de um problema. \cite{beck2000extreme}.
 
-	\item \textit{Release}:
+	\item \textit{Release}
 
-		São entregas de código funcional, as quais são feitas por etapa, entregando pequenas partes do software de tempos em tempos. \cite{beck2000extreme}.
+		São entregas de código funcional, as quais são feitas por etapa, entregando pequenas partes do \sw~ de tempos em tempos. \cite{beck2000extreme}.
 
-	\item \textit{Product Owner (PO)}:
+	\item \textit{Product Owner (PO)}
 
 		É o responsável pela atividade de repassar o conhecimento de todo o contexto de negócio para a equipe de desenvolvimento. Muitas vezes, o PO pode ser o próprio cliente ou qualquer funcionário que tenha conhecimento do problema e faz o intermédio entre a equipe de desenvolvimento e o cliente. \cite{beck2000extreme}
 
-	\item \textit{Product Backlog}:
+	\item \textit{Product Backlog}
 
 		Representa a produção do trabalho executado durante o desenvolvimento.\cite{sanches2010aplicaccao}.
 
-	\item \textit{Sprint Backlog}:
+	\item \textit{Sprint Backlog}
 
 		Representa o trabalho a ser desenvolvido durante uma \textit{sprint} com o objetivo de criar um produto apresentável para a equipe. O \textit{backlog} da \textit{sprint} deve ser produzido de forma incremental.
 
 \end{itemize}
-% Define todos os termos, acrônimos e abreviações necessários para interpretar a visão corretamente. Essas informações podem ser fornecidas por referência ao glossário do projeto, que pode ser desenvolvido online no repositório do RM.
-
-\subsection{Visão geral}
-
-Basicamente, neste documento, encontra-se todo o registro do contexto de desenvolvimento da Ferramenta de Gerência de Requisitos. O mesmo é organizado de forma a buscar o melhor entendimento a partir de qualquer \textit{stakeholder} do projeto, desde leigos até funcionários da área.
-%Descreve o conteúdo do documento de visão e explica como o documento é organizado.
-
-%\subsection{Objetivos} % (fold)
-%\label{sub:objetivos}
-%\subsubsection{Objetivos Gerais}
-
-%O objetivos gerais deste projeto é a fase de requisitos e o início da implementação de uma ferramenta de gerência de requisitos \opensource{} que auxilie o usuário durante todo o processo de requisitos, desde a escolha da metodologia utilizada ao controle da rastreabilidade dos requisitos.
-
-%\subsubsection{Objetivos Específicos}
-
-%Objetivos especificos são pequenos marcos que serão realizados durante o projeto, são eles:
-
-%\begin{itemize}
-%	\item Entender e registrar os problemas da \er.
-%	\item Entender e registrar as necessidades da \er.
-%	\item Entender as caractrísticas da \er.
-%	\item Definir requisitos funcionais para o desenvolvimento da ferramenta.
-%	\item Definir requisitos não-funcionais para o desenvolvimento da ferramenta.
-%	\item Definir casos de uso do desenvolvimento da ferramenta.
-%	\item Definir escopo da ferramenta.
-%\end{itemize}
-
-%\subsection{Justificativas} % (fold)
-%\label{sub:justificativas}
-
-%Inúmeras ferramentas já foram criadas para esta finalidade, contudo as ferramentas gratuitas não possuem a qualidade necessária para desenvolvimento de grandes e críticos sistemas. A partir daí, surge a necessidade da criação de uma nova ferramenta \opensource{} com qualidade suficiente para suprir as necessidades de todos os desenvolvedores de software do mundo.
-
-%Outra vantagem de uma ferramenta \opensource{} é a possibilidade de qualquer interessado em manter a ferramenta estar permitido a fazer o mesmo, o que facilita uma futura evolução do projeto, mantendo ele sempre capaz de se manter reais as necessidades do usuário.
