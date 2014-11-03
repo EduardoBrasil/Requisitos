@@ -23,7 +23,7 @@ Para os engenheiros de \er, a \nomeferramenta~ representará um avanço nas ativ
 %-----------------------------------------------------------------------------------------------------------
 \subsection{Matriz de rastreabilidade de requisitos}
 
-A matriz de rastreabilidade resume o modo como como serão organizados os requisitos do sistema, e esta ilustrada na imagem \ref{img:rastreabilidade}.
+A matriz de rastreabilidade resume o modo como serão organizados os requisitos do sistema, e a escolhida para o projeto esta ilustrada na figura \ref{img:rastreabilidade}.
 
 \begin{figure}[H]
 	\centering
@@ -31,7 +31,6 @@ A matriz de rastreabilidade resume o modo como como serão organizados os requis
 	\caption{Matriz de rastreabilidade}
 	\label{img:rastreabilidade}
 \end{figure}
-
 
 %-----------------------------------------------------------------------------------------------------------
 \subsection{Descrições da Parte Interessada e do Usuário}
@@ -74,9 +73,9 @@ Requisitos bem administrados para, no caso de mudanças nos requisitos, existir 
 
 \subsubsection{Principais Problemas e Necessidades da Parte Interessada}
 
-O problema a ser resolvido pela \nomeferramenta~ deve estar bastante claro entre todos os \stakeholder~ para que o desenvolvimento passe pela menor quantidade possível de dificuldades quanto ao entendimento de onde focar esforços para desenvolver a solução do problema.
+O problema a ser resolvido pela \nomeferramenta~ deve estar bastante claro entre todos os \stakeholder, para que o desenvolvimento passe pela menor quantidade possível de dificuldades quanto ao entendimento de onde focar esforços para desenvolver a solução.
 
-Para o mapeamento do problema principal e suas causas, foi utilizada a técnica de \textit{fishbone}. Segue o resultado da mesma na figura \ref{img:fishbone}
+Para o mapeamento do problema principal e suas causas, foi utilizada a técnica de \textit{fishbone}, que se contra na figura \ref{img:fishbone}.
 
 %-------------------------------------FISHBONE AQUI----------------------------------------
 \begin{figure}[H]
@@ -89,11 +88,11 @@ Para o mapeamento do problema principal e suas causas, foi utilizada a técnica 
 
 
 %-------------------------------------FRAMEWORK DE Problema-----------------------------------
-Para melhor entendimento do problema, utilizamos a técnica de \textit{Framework de problema}, que consiste em criar uma tabela apresentando o problema, os afetados, o impacto do problema e qual seria uma solução bem sucedida, o Framework esta retratado na tabela \ref{tab:frameworkproblema}.
+Para melhor entendimento do problema, utilizamos a técnica de \textit{Framework de problema}, que consiste em criar uma tabela apresentando o problema, os afetados, o impacto e qual seria uma solução bem sucedida, o Framework esta retratado na tabela \ref{tab:frameworkproblema}.
 
 \begin{table}[htbp]
 \centering
-\begin{tabular}{|p{2.5cm}|p{10cm}|p{2.5cm}|}
+\begin{tabular}{|p{3cm}|p{10cm}|p{2.5cm}|}
 %----------------------------------------------
 \hline
 \textbf{O Problema:} &
@@ -101,7 +100,7 @@ Falta de flexibilidade entre Abordagens e Ferramentas.
 \\ \hline
 %----------------------------------------------
 \textbf{Afeta:} &
-Todos os desenvolvedores de \sw~ que necessitam de uma flexibilidade maior na gerência de requisitos.
+Todos os desenvolvedores de \sw~que necessitam de uma flexibilidade maior na gerência de requisitos.
 \\ \hline
 %----------------------------------------------
 \textbf{Cujo impacto é:} &
@@ -232,11 +231,115 @@ A ferramenta poderá ser executada pelos navegadores Google Chrome versão 37.0.
 %-----------------------------------------------------------------------------------------------------------
 
 \subsection{Atributos do Recurso}
-%Fornece aos recursos atributos que podem ser usados para avaliar, controlar, priorizar e gerenciar os itens de produtos propostos para implementação. Descreve todos os tipos de requisitos e atributos em um plano de gerenciamento de requisitos. No entanto, você pode listar e descrever brevemente os atributos para os recursos que foram escolhidos. As subseções a seguir representam um conjunto de atributos de recursos sugeridos.
 
-\subsubsection{Status}
-%Aqui inserir a tabela que esta no doucmento antigo.
+Atributos de recursos são basicamente descrições dos requisitos em alguma área em específico. Durante o projeto foram utilizados os atributos de arquitetura, prioridade e status.
 
-\subsubsection{Prioridade}
+\subsubsection{Atributos de Arquitetura\\}
 
-\subsubsection{Arquitetura}
+Atributos de arquitetura são atributos que definem a complexidade arquitetural de se implementar algum requisito, por exemplo, se haverá necessidade de alterar arquitetura do software, e estão retratados na tabela \ref{tab:atributo_arquitetura}
+
+\begin{table}[H]
+\begin{tabular}{|p{4cm}|p{11cm}|}
+%-------------------------------------------
+\hline
+\textbf{Atributo} &
+\textbf{Descrição}
+\\ \hline
+
+%-------------------------------------------
+\textbf{Grande} &
+Para implementar o requisito, a arquitetura sofrerá uma grande alteração
+\\ \hline
+
+%-------------------------------------------
+\textbf{Média} &
+A arquitetura terá uma alteração consideravel na implementação do requisito
+\\ \hline
+
+%-------------------------------------------
+\textbf{Baixa} &
+A arquitetura terá uma pequena alteração para sustentar o requisito
+\\ \hline
+
+%-------------------------------------------
+\textbf{Nenhuma} &
+O requisito não terá impacto nenhum na arquitetura do projeto
+\\ \hline
+\end{tabular}
+\caption{Atributo de Arquitetura}
+\label{tab:atributo_arquitetura}
+\end{table}
+
+\subsubsection{Atributo de Prioridade\\}
+
+Atributos de prioridade são atributos que definem o quão importante um requisito é para o cliente, definindo se ele deve ser implementado o mais rápido possível ou se pode ter sua implementação adiada, estão retratados na tabela \ref{tab:atributo_prioridade}.
+
+\begin{table}[H]
+\begin{tabular}{|p{4cm}|p{11cm}|}
+
+\hline
+\textbf{Atributo} &
+\textbf{Descrição}
+\\ \hline
+
+%-----------------------------------------
+\textbf{Alta prioridade} &
+Os requisitos marcados com este atributo são requisitos que possuem um grande interesse do cliente
+\\ \hline
+
+%-----------------------------------------
+\textbf{Média prioridade} &
+Os requisitos marcados por este atributo são requisitos que o cliente possui um grande interesse, porém não existe necessidade de implementá-lo rapidamente.
+\\ \hline
+
+%----------------------------------------
+\textbf{Baixa prioridade} &
+Os requisitos marcados por este atributo são requisitos que o cliente deseja, porém não são essenciais para o funcionamento da solução.
+\\ \hline
+
+\end{tabular}
+\caption{Atributo de prioridade}
+\label{tab:atributo_prioridade}
+\end{table}
+
+\subsubsection{Atributos de Status\\}
+
+Atributos de status são atributos que indicam em que fase um requisito está, de acordo com a tabela a seguir, e estão retrados na tabela \ref{tab:atributo_status}
+
+\begin{table}[h]
+\begin{tabular}{|p{4cm}|p{11cm}|}
+
+\hline
+\textbf{Atributo} &
+\textbf{Descrição}
+\\ \hline
+
+%-------------------------------
+\textbf{Aceito} &
+Requisito devidamente implementado e aceito pelo cliente
+\\ \hline
+
+%-------------------------------
+\textbf{Implementado} &
+Requisito implementado porém esperando aceitação
+\\ \hline
+
+%-------------------------------
+\textbf{Detalhado} &
+Requisito detalhado, esperando por implementação
+\\ \hline
+
+%------------------------------
+\textbf{Elicitação aceita} &
+Requisito elicitado e aceito pelo cliente porém sem detalhamento
+\\ \hline
+
+%------------------------------
+\textbf{Elicitado} &
+Elicitado porém esperando aceitação do cliente
+\\ \hline
+
+\end{tabular}
+\caption{Atributo de status}
+\label{tab:atributo_status}
+\end{table}
