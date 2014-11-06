@@ -51,124 +51,184 @@ Utilizando a tabela \ref{tab:pontuacao_atributos}, fomos capazes de fazer uma re
 
 \begin{table}[h]
 \centering
-\begin{tabular}{|p{3.5cm}|p{4cm}|p{4.5cm}|p{2cm}|}
+\begin{tabular}{|l|C{3cm}|C{3cm}|l|}
 
 \hline
 \textbf{Recurso} &
 \textbf{Atributo de prioridade} &
-\textbf{Atributo de arquitetura} &
+\small{\textbf{Atributo de arquitetura}} &
 \textbf{Pontuação final}
 \\ \hline
 
 %---------------------------------------------
 Definir Metodologia & 
- &
- &
+Alta prioridade &
+Média &
+10
  \\ \hline
 
  %--------------------------------------------
 Manter Problema &
- &
- &
+Alta prioridade &
+Grande &
+12
  \\ \hline
  
  %--------------------------------------------
 Manter Necessidades &
- &
- &
+Alta prioridade &
+Grande &
+12
  \\ \hline
  
  %--------------------------------------------
 Manter Características &
- &
- &
+Alta prioridade &
+Grande &
+12
  \\ \hline
  
  %--------------------------------------------
 Manter Casos de Uso &
- &
- &
+Alta prioridade &
+Grande &
+12
  \\ \hline
  
  %--------------------------------------------
 Manter Temas de Investimento &
- &
- &
+Alta prioridade &
+Grande &
+12
  \\ \hline
  
  %--------------------------------------------
 Manter Épicos &
- &
- &
+Alta prioridade &
+Grande &
+12
  \\ \hline
  
  %--------------------------------------------
 Manter Features &
- &
- &
+Alta prioridade &
+Grande &
+12
  \\ \hline
  
  %--------------------------------------------
 Manter Histórias de Usuário &
- &
- &
+Alta prioridade &
+Grande &
+12
  \\ \hline
  
  %--------------------------------------------
 Manter Atributos &
- &
- &
+Média prioridade &
+Baixa &
+6
  \\ \hline
  
  %--------------------------------------------
 Manter Rastreabilidade de Requisitos &
- &
- &
+Alta prioridade &
+Média &
+10
  \\ \hline
  
  %--------------------------------------------
 Gerar \textit{Diagrama de Ishikawa} &
- &
- &
+Média prioridade &
+Média &
+8
  \\ \hline
  
  %--------------------------------------------
 Manter Atores do Projeto &
- &
- &
+Baixa prioridade &
+Baixa &
+4
  \\ \hline
  
  %--------------------------------------------
 Gerar Diagramas de Casos de Uso &
- &
- &
+Média prioridade &
+Média &
+8
  \\ \hline
  
  %--------------------------------------------
 Manter \textit{Roadmaps} &
- &
- &
+Média prioridade &
+Média &
+8
  \\ \hline
  
  %--------------------------------------------
 Gerar plano de iteração &
- &
- &
+média prioridade &
+Nenhuma &
+4
  \\ \hline
  
  %--------------------------------------------
 Definir ``hibridez'' do projeto &
- &
- &
+Alta prioridade &
+Grande &
+12
  \\ \hline
 
  %--------------------------------------------
 Controlar histórico de versão &
- &
- &
+Baixa prioridade &
+Nenhuma &
+2
  \\ \hline
  %--------------------------------------------
 \end{tabular}
 \caption{Pontuação dos recursos}
 \label{tab:pontuacao_recursos}
 \end{table}
+
+Utilizando os dados apresentados na tabela \ref{tab:pontuacao_recursos}, podemos então gerar um \textit{rank} da ordem em que as funcionalidades devem ser implementadas, e a ordem deve ser de acordo com a lista a baixo
+
+\begin{enumerate}
+	\item Primeira prioridade
+		\begin{itemize}
+			\item Manter problema
+			\item Manter Necessidade
+			\item Manter Características
+			\item Manter Casos de uso
+			\item Manter Temas de investimento
+			\item Manter Épicos
+			\item Manter Features
+			\item Manter Histórias de usuário
+			\item definir ``hibridez'' do projeto
+		\end{itemize}
+	\item Segunda prioridade
+		\begin{itemize}
+			\item Definir metodologia
+			\item Manter rastreabilidade de requisitos
+		\end{itemize}
+	\item Terceira prioridade
+		\begin{itemize}
+			\item Gerar \textit{Diagrama de Ishikawa}
+			\item Gerar Diagrama de Caso de Uso
+			\item Manter \textit{roadmaps}
+		\end{itemize}
+	\item Quarta prioridade
+		\begin{itemize}
+			\item Manter Atributos
+		\end{itemize}
+	\item Quinta prioridade
+		\begin{itemize}
+			\item Manter atores do projeto
+			\item gerar planos de iteração
+		\end{itemize}
+	\item Sexta prioridade
+		\begin{itemize}
+			\item Controlar histórico de versão
+		\end{itemize}
+
+\end{enumerate}
