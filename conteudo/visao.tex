@@ -136,6 +136,7 @@ Após o entendimento do problema, vê-se necessária a documentação das necess
 \textbf{Solução Atual} &
 \textbf{Solução Proposta}
 \\ \hline
+
 %-------------------------------------------------------------
 Utilização de ferramentas que se adequem as metodologias. &
 Ferramentas associadas a metodologias específicas. &
@@ -155,28 +156,16 @@ Equipe precisa estudar as características do projeto e decidir qual a abordagem
 Criação de uma ferramenta que recolha as características do projeto e apresente a abordagem mais adequada.
 \\ \hline
 %-------------------------------------------------------------
-Utilização de apenas uma ferramenta de gerência de requisitos durante o projeto. &
-Desvinculação de Ferramentas. &
-Equipe utiliza mais de uma ferramenta. &
-Criação de uma ferramenta que garanta as funcionalidades de todas as ferramentas baseadas em distintas abordagens. 
-\\ \hline
-%-------------------------------------------------------------
 Obter um processo de \textit{E.R.} adaptável a qualquer abordagem. &
 Falta de definição de um processo de \textit{E.R.} adaptável. &
 Utilização de um processo inflexível e voltado apenas para uma abordagem. &
 Criação de uma ferramenta que gerencie processos flexíveis.
 \\ \hline
 %-------------------------------------------------------------
-Obter o perfil da equipe de forma adequada. &
-Erro na definição do perfil da equipe. &
-Equipe precisa definir o próprio perfil. &
-Criação de uma ferramenta que receba \textit{inputs} das características da equipe e apresente o perfil da equipe de forma correta.
-%-------------------------------------------------------------
-\\ \hline
-Utilização da metodologia mais adequada para as características do projeto.&
-Conhecimento insuficiente a cerca das metodologias existentes. &
-Equipe precisa estudar todas as metodologias para escolher a mais adequada. &
-Criação de uma ferramenta que apresente a metodologia mais adequada para o projeto.
+Gerar documentação de qualidade e fácil entendimento &
+Dificuldade em gerar documentação para pessoas de fora da equipe &
+Utilização de ferramentas a parte para gerar Diagramas de Caso de Uso e \textit{Diagramas de Ishikawa}. &
+Integração da documentação na ferramenta de requisitos.
 \\ \hline
 %-------------------------------------------------------------
 \end{tabular}
@@ -209,57 +198,65 @@ Os recursos do produto são as funcionalidades do sistema com uma pequena descri
 
 \subsubsection{Problema 1 - Falta de flexibilidade entre abordagens e ferramentas}
 
-O problem 1, gera algumas necessidades, que serão colocadas a seguir.
+O problema 1, gera algumas necessidades, que serão colocadas a seguir.
 
-\paragraph{Necessidade 1.1 - Utilização de ferramentas que se adequem as metodologias\\}
+\paragraph{Necessidade 1.1 - Utilização de ferramentas que se adequem as metodologias}
 
-	\begin{itemize}
-
-	\item Caso de uso 1.1.1 - Manter Problema
-	\item Caso de uso 1.1.2 - Manter Necessidades
-	\item Caso de uso 1.1.3 - Manter Características
-	\item Caso de uso 1.1.4 - Manter Casos de Uso
-	\item Caso de uso 1.1.5 - Manter Temas de Investimento
-	\item Caso de uso 1.1.6 - Manter Épicos
-	\item Caso de uso 1.1.7 - Manter Features
-	\item Caso de uso 1.1.8 - Manter Histórias de Usuário
-
-	\end{itemize}
-
-\paragraph{Necessidade 1.2 - Apoio a utilização de uma rastreabilidade organizada e eficiente em qualquer abordagem\\}
-
-	\begin{itemize}
-	\item Caso de uso 1.2.1 - Manter Atributos
-	\item Caso de uso 1.2.2 - Manter Rastreabilidade de Requisitos
-	\end{itemize}
-
-\paragraph{Necessidade 1.3 - Obter critérios fixos que direcionem o projeto para abordagem mais adequada\\}
-
-\paragraph{Necessidade 1.4 - Utilização de apenas uma ferramenta de gerência de requisitos em diferentes projetos\\}
-
-\paragraph{Necessidade 1.5 - Obter um processo de \er~ adaptável a qualquer abordagem\\}
-
-\paragraph{Necessidade 1.6 - Obter o perfil da equipe de forma adequada\\}
-
-\paragraph{Necessidade 1.7 - Utilização da metodologia mais adequada para as características do projeto\\}
-
-	\begin{itemize}
-	\item Caso de Uso 1.7.1 - Definir Metodologia
-	\item Caso de uso 1.7.2 - Definir ``hibridez'' do projeto
-	\end{itemize}
-
- Estes são os casos de uso que nao se encaixam em nenhuma necessidade, alem de terem necessidades que não possuem casos de uso e necessidade duplicadas.
-
-\begin{enumerate}
-
-	\item Gerar \textit{Diagrama de Ishikawa}
-	\item Manter Atores do Projeto
-	\item Gerar Diagramas de Casos de Uso
-	\item Manter \textit{Roadmaps}
-	\item Gerar plano de iteração
+	\subparagraph{Característica 1.1.1 - Manter metodologias tradicionais}
+		\begin{itemize}
+			\item Caso de uso 1.1.1.1 - Manter Problema
+			\item Caso de uso 1.1.1.2 - Manter Necessidades
+			\item Caso de uso 1.1.1.3 - Manter Características
+			\item Caso de uso 1.1.1.4 - Manter Casos de Uso
+		\end{itemize}
 	
-	\item Controlar histórico de versão
-\end{enumerate}
+	\subparagraph{Característica 1.1.2 - Manter metodologias ágeis}
+		\begin{itemize}
+			\item Caso de uso 1.1.2.1 - Manter Temas de Investimento
+			\item Caso de uso 1.1.2.2 - Manter Épicos
+			\item Caso de uso 1.1.2.3 - Manter Features
+			\item Caso de uso 1.1.2.4 - Manter Histórias de Usuário
+		\end{itemize}
+
+\paragraph{Necessidade 1.2 - Apoio a utilização de uma rastreabilidade organizada e eficiente em qualquer abordagem}
+	\subparagraph{Característica 1.2.1 - Manter informações sobre requisitos}
+		\begin{itemize}
+			\item Caso de uso 1.2.1.1 - Manter Atributos
+			\item Caso de uso 1.2.1.2 - Manter \textit{Roadmaps}
+		\end{itemize}
+
+	\subparagraph{Característica 1.2.2 - Manter relação entre Requisitos}
+		\begin{itemize}
+			\item Caso de uso 1.2.2.1 - Manter rastreabilidade horizontal entre os requisitos
+			\item Caso de uso 1.2.2.2 - Manter rastreabilidade vertical entre os requisitos
+		\end{itemize}
+
+\paragraph{Necessidade 1.3 - Obter critérios fixos que direcionem o projeto para abordagem mais adequada}
+	\subparagraph{Característica 1.3.1 - Auxiliar na escolha da metodologia}
+		\begin{itemize}
+			\item Caso de Uso 1.3.1.1 - Definir Metodologia
+		\end{itemize}
+
+\paragraph{Necessidade 1.4 - Obter um processo de \er~ adaptável a qualquer abordagem}
+	\subparagraph{Característica 1.4.1 - Criar processos Híbridos}
+	\begin{itemize}
+		\item Caso de uso 1.4.1.1 - Definir ``hibridez'' do projeto
+		\item Caso de uso 1.4.1.2 - Manter processos híbridos
+	\end{itemize}
+
+\paragraph{Necessidade 1.5 - Gerar documentação de qualidade e fácil entendimento}
+	\subparagraph{Característica 1.5.1 - Gerar e manter diagramas}
+		\begin{itemize}
+			\item Caso de uso 1.5.1.1 - Gerar \textit{Diagrama de Ishikawa}
+			\item Caso de uso 1.5.1.2 - Gerar Diagramas de Casos de Uso
+		\end{itemize}
+
+	\subparagraph{Característica 1.5.2 - Controlar projeto por toda sua duração}
+		\begin{enumerate}
+			\item Caso de uso 1.5.2.1 - Gerar plano de iteração
+			\item Caso de uso 1.5.2.2 - Controlar histórico de versão
+		\end{enumerate}
+
 %-----------------------------------------------------------------------------------------------------------
 \subsection{Restrições}
 \subsubsection{Restrição Técnica}
@@ -278,7 +275,7 @@ A ferramenta poderá ser executada pelos navegadores Google Chrome versão 37.0.
 
 Atributos de recursos são basicamente descrições dos requisitos em alguma área em específico. Durante o projeto foram utilizados os atributos de arquitetura, prioridade e status.
 
-\subsubsection{Atributos de Arquitetura\\}
+\subsubsection{Atributos de Arquitetura}
 
 Atributos de arquitetura são atributos que definem a complexidade arquitetural de se implementar algum requisito, por exemplo, se haverá necessidade de alterar arquitetura do software, e estão retratados na tabela \ref{tab:atributo_arquitetura}
 
@@ -314,7 +311,7 @@ O requisito não terá impacto nenhum na arquitetura do projeto
 \label{tab:atributo_arquitetura}
 \end{table}
 
-\subsubsection{Atributo de Prioridade\\}
+\subsubsection{Atributo de Prioridade}
 
 Atributos de prioridade são atributos que definem o quão importante um requisito é para o cliente, definindo se ele deve ser implementado o mais rápido possível ou se pode ter sua implementação adiada, estão retratados na tabela \ref{tab:atributo_prioridade}.
 
@@ -346,7 +343,7 @@ Os requisitos marcados por este atributo são requisitos que o cliente deseja, p
 \label{tab:atributo_prioridade}
 \end{table}
 
-\subsubsection{Atributos de Status\\}
+\subsubsection{Atributos de Status}
 
 Atributos de status são atributos que indicam em que fase um requisito está, de acordo com a tabela a seguir, e estão retrados na tabela \ref{tab:atributo_status}
 
