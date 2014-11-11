@@ -52,6 +52,60 @@ Responsável por validar os requisitos
 
 \subsection{Detalhamento dos casos de uso}
 
-%inserir modelo
+Detalhamentos de casos de uso seve para definir o que cada caso de uso fará, quem irá realizá-lo, e como ele irá responder a falhas caso haja, e todos os seus caminhos possíveis.
 
-\subsubsection{Caso de Uso: UC-01x Buscar cruzeiros}
+A seguir estão os detalhamentos dos casos de uso que serão implementados nas sprints 1 e 2, detalhadas na tabela \ref{tab:primeiro_roadmap}.
+
+\subsubsection{Caso de Uso - UC1.3.1.1 - Definir Metodologia}
+
+\paragraph{Descrição}
+
+Este caso de uso especifica a ação do sistema de, dada as informações solicitadas, selecionar a melhor rota possível para o desenvolvimento do projeto, podendo o usuário, ao final do questionário, decidir se irá seguir ou não a rota sugerida, e então preparar a ferramenta para a metodologia escolhida.
+
+\begin{enumerate}
+	\item Atores
+		Engenheiro de requisitos. 
+	\item Pré-condições
+		Não existe pré condições para este caso de uso.
+	\item Pós-condições
+		A rota a ser utilizada deve estar definida ao final da execução deste caso de uso.
+\end{enumerate}
+
+\paragraph{Fluxo básico}
+
+	\begin{enumerate}
+		\item Ator decide criar um novo projeto;
+		\item Sistema apresenta um questionário para recolher informações doprojeto;
+			As perguntas são:
+			\begin{itemize}
+				\item
+				\item
+				\item
+			\end{itemize}
+		\item Ator responde questionário;
+		\item Sistema calcula estisticamente qual rota deve ser utilizada, de acorodo com as respostas do ator;
+			\label{item:1.3.1.1_empate}
+		\item Sistema apresenta ao ator a escolha da metodologia;
+		\item Usuário aceita a metodologia;
+			\label{item:1.3.1.1_recusado}
+		\item Sistema prepara a ferramenta para utilização da metodologia escolhida.
+			\label{item:1.3.1.1_retorno1}
+	\end{enumerate}
+
+\paragraph{Fluxo alternativo A}
+
+	\begin{enumerate}
+		\item No passo \ref{item:1.3.1.1_empate} do fluxo básico, caso haja um empate entre metodologias;
+		\item Sistema apresenta aos ao ator as metodologias empatadas e suas características;
+		\item Ator escolhe a metodologia que deseja;
+		\item O fluxo retorna para o passo \ref{item:1.3.1.1_retorno1} do fluxo básico.
+	\end{enumerate}
+
+\paragraph{Fluxo alternativo B}
+
+	\begin{itemize}
+		\item No passo \ref{item:1.3.1.1_recusado} do fluxo básico, caso o ator não aceite a metodologia proposta pelo sistema;
+		\item Ator rejeita a opção da metodologia escolhida pelo sistema;
+		\item Sistema apresenta todas as opções de metodologias cadastradas para que o usuário possa escolher;
+		\item retorna para o passo \ref{item:1.3.1.1_retorno1} do fluxo básico.
+	\end{itemize}	
