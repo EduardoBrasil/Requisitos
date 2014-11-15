@@ -1,21 +1,50 @@
 As especificações suplementares listam todas as definições dos sistema que não estão incluídas no modelo de Caso de uso, ou seja, não estão relacionadas com a funcionalidade em sí do sistema, \ref{rup}.
 
-\subsection{Usabilidade}
+\subsection{Características do sistema}
+\label{subSection:suplementares_Caract_sistema}
+As características do sitema são representadas nesta sessão são as definições do que mais adiante será transformado em requisitos não funcionais.
+
+\subsubsection{Usabilidade}
 	
-	A ferramenta \nomeFerramenta~ deve ser de fácil utilização, a ponto de não ser necessário treinamento do usuário para a utilização das funcionalidades básicas, e deve ser intuitiva, para que após um mês, no máximo, o usuário alcance uma produtividade boa em manipular os requisitos e utilizar o sistema.
+	A ferramenta \nomeferramenta~ deve ser de fácil utilização, a ponto de não ser necessário treinamento do usuário para a utilização das funcionalidades básicas, e deve ser intuitiva, para que após um mês, no máximo, o usuário alcance uma produtividade boa em manipular os requisitos e utilizar o sistema.
 
-\subsection{Confiabilidade}
+\subsubsection{Confiabilidade}
 
-	A ferramenta \nomeFerramenta~ deve estar presente em pelo menos 95\% do tempo, desonsiderando erros do servidor no qual será instalada pelo usuário, e deve ser possuir resiliência suficiente para que não seja necessário reinicialização do sistema a cada quebra.
+	A ferramenta \nomeferramenta~ deve estar disponível pelo menos 95\% do tempo, desonsiderando erros do servidor no qual será instalada pelo usuário, e deve ser possuir resiliência suficiente para que não seja necessário reinicialização do sistema a cada quebra.
 
 	Infelizmente, não é possível gerar um sistema 100\% \textit{anti-quebra}, e sabemos que a ferramenta irá passar por falhas. Porém estabelecemos que o tempo mínimo entre falhas do sistema deverá ser de 1 mês.
 
 	O sistema também deverá ser confiável em relação à invasões, devendo ser capaz de impedir os ataques básicos ao sistema, e ao seu banco de dados.
 
-\subsection{Desempenho}
+\subsubsection{Desempenho}
 
 	A ferramenta será considerada com um desempenho bom quando qualquer uma de suas páginas não levar mais de dois segundos para ser carregada, e em média levar apenas um segundo.
 
 	Além do tempo de resposta das páginas outro quesito para a ferramenta possuir um bom desempenho é o número de consultas no banco de dados por funcionalidade, não devendo ser maior que uma.
 
 	O sistema deverá ser capaz também de receber um total de mil usuários simultâneos ter influência na regra do tempo de resposta de cada uma das páginas.
+
+\subsection{Requisitos não funcionais}
+
+	Os requisitos não funcionais partem das características do sistema, citados na Sessão \ref{subSection:suplementares_Caract_sistema}, e são listados abaixo. 
+
+	\begin{enumerate}
+		\item Usabilidade
+			\begin{itemize}
+				\item RNF01 - O usuário não deve necessitar de treinamento para utilizar a ferramenta;
+				\item RNF02 - O usuário não deve levar mais de um mês para estar totalmente produtivo na utilização da ferramenta.
+			\end{itemize}
+		\item Confiabilidade
+			\begin{itemize}
+				\item RNF03 - O sistema deve estar disponível 95\% do tempo;
+				\item RNF04 - O sistema deve ser resiliente;
+				\item RNF05 - O sistema deve ter um espaço mínimo de 1 mês entre uma falha e outra;
+				\item RNF06 - O sistema deve ser capaz de resistir à invasões conhecidas.
+			\end{itemize}
+		\item Desempenho
+			\begin{itemize}
+				\item RNF07 - O sistema deve ter um tempo de resposta em qualquer página de no máximo dois segundos e em média um segundo;
+				\item RNF08 - O sistema deve ter no máximo 1 consulta ao banco de dados por funcionalidade;
+				\item RNF09 - O sistema deve suportar até mil usuários sem redução no tempo de resposta das páginas.
+			\end{itemize}
+	\end{enumerate}
