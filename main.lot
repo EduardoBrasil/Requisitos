@@ -1,6 +1,7 @@
 \select@language {brazil}
 \select@language {english}
 \select@language {brazil}
+<<<<<<< HEAD
 \contentsline {table}{\numberline {2}{\ignorespaces Parte Interessada\relax }}{6}{table.caption.9}
 \contentsline {table}{\numberline {3}{\ignorespaces Framework de Problema\relax }}{7}{table.caption.11}
 \contentsline {table}{\numberline {4}{\ignorespaces Framework de Necessidades\relax }}{8}{table.caption.12}
@@ -22,3 +23,13 @@
 >>>>>>> Inicio questionario
 =======
 >>>>>>> Priorização de Casos de Uso - Tabela
+=======
+\contentsline {table}{\numberline {2}{\ignorespaces Parte Interessada\relax }}{6}{table.caption.8}
+\contentsline {table}{\numberline {3}{\ignorespaces Framework de Problema\relax }}{7}{table.caption.10}
+\contentsline {table}{\numberline {4}{\ignorespaces Framework de Necessidades\relax }}{8}{table.caption.11}
+\contentsline {table}{\numberline {5}{\ignorespaces Pontua\IeC {\c c}\IeC {\~a}o dos Atributos\relax }}{13}{table.caption.13}
+\contentsline {table}{\numberline {6}{\ignorespaces Pontua\IeC {\c c}\IeC {\~a}o dos recursos\relax }}{14}{table.caption.14}
+\contentsline {table}{\numberline {7}{\ignorespaces \textit {Roadmap}\relax }}{15}{table.caption.15}
+\contentsline {table}{\numberline {8}{\ignorespaces Atores do sistema\relax }}{17}{table.caption.16}
+\contentsline {table}{\numberline {9}{\ignorespaces Entrevista Prioriza\IeC {\c c}\IeC {\~a}o de Casos de Uso\relax }}{22}{table.caption.19}
+>>>>>>> atualizando o documento retirando informações duplicadas
