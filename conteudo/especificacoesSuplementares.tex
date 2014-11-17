@@ -1,8 +1,8 @@
-As especificações suplementares listam todas as definições dos sistema que não estão incluídas no modelo de Caso de uso, ou seja, não estão relacionadas com a funcionalidade em sí do sistema, \ref{rup}.
+As especificações suplementares listam todas as definições dos sistema que não estão incluídas no modelo de Caso de uso, ou seja, não estão relacionadas com a funcionalidade em sí do sistema, \cite{rup}.
 
 \subsection{Características do sistema}
 \label{subSection:suplementares_Caract_sistema}
-As características do sitema são representadas nesta sessão são as definições do que mais adiante será transformado em requisitos não funcionais.
+As características do sistema serão representadas nesta sessão e comtemplam todas as definições que serão usadas para a definição dos requisitos não funcionais.
 
 \subsubsection{Usabilidade}
 	
@@ -10,7 +10,7 @@ As características do sitema são representadas nesta sessão são as definiç�
 
 \subsubsection{Confiabilidade}
 
-	A ferramenta \nomeferramenta~ deve estar disponível pelo menos 95\% do tempo, desonsiderando erros do servidor no qual será instalada pelo usuário, e deve ser possuir resiliência suficiente para que não seja necessário reinicialização do sistema a cada quebra.
+	A ferramenta \nomeferramenta~ deve estar disponível pelo menos 95\% do tempo, desconsiderando erros do servidor no qual será instalada pelo usuário, e deve ser possuir resiliência suficiente para que não seja necessário reinicialização do sistema a cada quebra.
 
 	Infelizmente, não é possível gerar um sistema 100\% \textit{anti-quebra}, e sabemos que a ferramenta irá passar por falhas. Porém estabelecemos que o tempo mínimo entre falhas do sistema deverá ser de 1 mês.
 
@@ -29,22 +29,22 @@ As características do sitema são representadas nesta sessão são as definiç�
 	Os requisitos não funcionais partem das características do sistema, citados na Sessão \ref{subSection:suplementares_Caract_sistema}, e são listados abaixo. 
 
 	\begin{enumerate}
-		\item Usabilidade
+		\item \textbf{Usabilidade:}
 			\begin{itemize}
-				\item RNF01 - O usuário não deve necessitar de treinamento para utilizar a ferramenta;
-				\item RNF02 - O usuário não deve levar mais de um mês para estar totalmente produtivo na utilização da ferramenta.
+				\item \textbf{RNF01} - O usuário não deve necessitar de treinamento para utilizar a ferramenta;
+				\item \textbf{RNF02} - O usuário não deve levar mais de um mês para estar totalmente produtivo na utilização da ferramenta.
 			\end{itemize}
-		\item Confiabilidade
+		\item \textbf{Confiabilidade:}
 			\begin{itemize}
-				\item RNF03 - O sistema deve estar disponível 95\% do tempo;
-				\item RNF04 - O sistema deve ser resiliente;
-				\item RNF05 - O sistema deve ter um espaço mínimo de 1 mês entre uma falha e outra;
-				\item RNF06 - O sistema deve ser capaz de resistir à invasões conhecidas.
+				\item \textbf{RNF03} - O sistema deve estar disponível 95\% do tempo;
+				\item \textbf{RNF04} - O sistema deve ser resiliente;
+				\item \textbf{RNF05} - O sistema deve ter um espaço mínimo de 1 mês entre uma falha e outra;
+				\item \textbf{RNF06} - O sistema deve ser capaz de resistir à invasões conhecidas.
 			\end{itemize}
-		\item Desempenho
+		\item \textbf{Desempenho:}
 			\begin{itemize}
-				\item RNF07 - O sistema deve ter um tempo de resposta em qualquer página de no máximo dois segundos e em média um segundo;
-				\item RNF08 - O sistema deve ter no máximo 1 consulta ao banco de dados por funcionalidade;
-				\item RNF09 - O sistema deve suportar até mil usuários sem redução no tempo de resposta das páginas.
+				\item \textbf{RNF07} - O sistema deve ter um tempo de resposta em qualquer página de no máximo dois segundos e em média um segundo;
+				\item \textbf{RNF08} - O sistema deve ter no máximo 1 consulta ao banco de dados por funcionalidade;
+				\item \textbf{RNF09} - O sistema deve suportar até mil usuários sem redução no tempo de resposta das páginas.
 			\end{itemize}
 	\end{enumerate}
