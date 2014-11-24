@@ -37,79 +37,79 @@ A entrevista e suas respostas estão dispostas na seguinte tabela:
 \begin{tabular}{|p{7cm}|p{3cm}|}
 %----------------------------------------------
 \hline
-\textbf{Manter Problema:} &
+\textbf{Manter Problema} &
 \textcolor{red}{Prioridade Baixa}
 \\ \hline
 %----------------------------------------------
-\textbf{Manter Necessidades:} &
+\textbf{Manter Necessidades} &
 \textcolor{red}{Prioridade Baixa}
 \\ \hline
 %----------------------------------------------
-\textbf{Manter Características:} &
+\textbf{Manter Características} &
 \textcolor{red}{Prioridade Baixa}
 \\ \hline
 %----------------------------------------------
-\textbf{Manter Casos de Uso:} &
+\textbf{Manter Casos de Uso} &
 \textcolor{red}{Prioridade Baixa}
 \\ \hline
 %----------------------------------------------
-\textbf{Manter Temas de Investimento:} &
+\textbf{Manter Temas de Investimento} &
 \textcolor{red}{Prioridade Baixa}
 \\ \hline
 %----------------------------------------------
-\textbf{Manter Épicos:} &
+\textbf{Manter Épicos} &
 \textcolor{red}{Prioridade Baixa}
 \\ \hline
 %----------------------------------------------
-\textbf{Manter Features:} &
+\textbf{Manter Features} &
 \textcolor{red}{Prioridade Baixa}
 \\ \hline
 %----------------------------------------------
-\textbf{Manter Histórias de Usuário:} &
+\textbf{Manter Histórias de Usuário} &
 \textcolor{red}{Prioridade Baixa}
 \\ \hline
 %----------------------------------------------
-\textbf{Manter Atributos:} &
+\textbf{Manter Atributos} &
 \textcolor{red}{Prioridade Baixa}
 \\ \hline
 %----------------------------------------------
-\textbf{Manter RoadMaps:} &
+\textbf{Manter RoadMaps} &
 \textcolor{blue}{Prioridade Média}
 \\ \hline
 %----------------------------------------------
-\textbf{Manter Rastreabilidade Horizontal entre os requisitos:} &
+\textbf{Manter Rastreabilidade Horizontal entre os requisitos} &
 \textcolor{blue}{Prioridade Média}
 \\ \hline
 %----------------------------------------------
-\textbf{Manter Rastreabilidade Vertical entre os requisitos:} &
+\textbf{Manter Rastreabilidade Vertical entre os requisitos} &
 \textcolor{blue}{Prioridade Média}
 \\ \hline
 %----------------------------------------------
-\textbf{Definir Metodologia:} &
+\textbf{Definir Metodologia} &
 \textcolor{green}{Prioridade Alta}
 \\ \hline
 %----------------------------------------------
-\textbf{Definir “hibridez” do projeto:} &
+\textbf{Definir “hibridez” do projeto} &
 \textcolor{green}{Prioridade Alta}
 \\ \hline
 %----------------------------------------------
-\textbf{Manter processos híbridos:} &
+\textbf{Manter processos híbridos} &
 \textcolor{green}{Prioridade Alta}
 \\ \hline
 %----------------------------------------------
-\textbf{Gerar Diagrama de Ishikawa:} &
+\textbf{Gerar Diagrama de Ishikawa} &
 \textcolor{red}{Prioridade Baixa}
 \\ \hline
 %----------------------------------------------
-\textbf{Gerar Diagramas de Casos de Uso:} &
+\textbf{Gerar Diagramas de Casos de Uso} &
 \textcolor{blue}{Prioridade Média}
 \\ \hline
 %----------------------------------------------
-\textbf{Gerar plano de iteração:} &
+\textbf{Gerar plano de iteração} &
 \textcolor{red}{Prioridade Baixa}
 \\ \hline
 %----------------------------------------------
-\textbf{Controlar histórico de versão:} &
+\textbf{Controlar histórico de versão} &
 \textcolor{red}{Prioridade Baixa}
 \\ \hline
 %----------------------------------------------
@@ -117,3 +117,78 @@ A entrevista e suas respostas estão dispostas na seguinte tabela:
 \caption{Entrevista Priorização de Casos de Uso}
 \label{tab:entrevista_priorizacao_uc}
 \end{table}
+
+\chapter{Ferramenta}
+
+A seguir nas figuras de \ref{img:primeira_pag_fer} a \ref{img:primeira_pag_dps} seguem as imagens de como a ferramenta está implementada, sua interface e seu funcionamento
+
+Inicialmente a página mostrará apenas uma apresentação da ferramenta que ainda não está implementada, e no canto superior esquero deverá apresentar ``\textit{Hello} <nome do usuário>'', porém ainda não foi implementado o login, impedindo ter uma conta de um usuário para ser colocado no nome, resultando apenas no ``\textit{Hello}''.
+
+No menu do \textit{header} pode-se ver também um menu escrito ``\textit{New project}'' que irá direcionar o usuário para o questionário de criação de um novo projeto, e o botão ``\textit{Your projects}'' que é um menu \textit{drop down} onde serão listados todos os projetos do usuário.
+
+Mais a direita na tela está visível o botão ``\textit{Log out}'', onde o usuário irá sair da aplicação, porém ainda não está implementado devido ao mesmo problema relatado acima na questão do campo ``\textit{Hello}'', assim como é possível visualizar na Figura \ref{img:primeira_pag_fer}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{imgFerramenta/primeiraPagina}
+	\caption{Primeira página da ferramenta}
+	\label{img:primeira_pag_fer}
+\end{figure}
+
+Após o usuário clicar sobre o botão ``\textit{New project}'' ele será redirecionado para a página que contém o formulário com as perguntas para montar o documento, sendo todas elas obrigatórias, e um campo para inserir o nome do projeto.
+
+Ao final do questionário encontra-se o botão ``\textit{Answer questionnaire}'' que irá registrar no banco de dados as respostas do usuário assim como é mostrado nas Figuras \ref{img:questionario_antes} e \ref{img:questionario_depois}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{imgFerramenta/questionarioBranco}
+	\caption{Questionário antes do preenchimento}
+	\label{img:questionario_antes}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{imgFerramenta/questionarioPreenchido}
+	\caption{Questionario antes do preenchimento}
+	\label{img:questionario_depois}
+\end{figure}
+
+Após o usuário preencher e enviar o formulário o sistema computa suas respostas gerando uma lista de práticas que serão parte do processo do usuário. Estas práticas são listadas, e o usuário é indagado se está de acordo com o processo gerado para ele, assim com é apresentado na Figura \ref{img:result_questionario}.
+
+Caso selecione que não o usuário será redirecionado para editar seu processo, caso aceite, será apresentado qual a rota final do projeto e suas práticas.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{imgFerramenta/resultadoQuestionario}
+	\caption{Resultado do questionário}
+	\label{img:result_questionario}
+\end{figure}
+
+No caso do usuário decidir que o processo montado para ele não está de acordo com suas preferências, serão apresentados todas as práticas que estão presentes no processo atual e a opção de trocá-las pelas práticas equivalentes na outra metodologia, ou apenas deletá-la se for o caso, como é mostrado na Figura \ref{img:questio_nao_aceito}.
+
+Para poder caber a imagem no documento, foram retiradas várias práticas do processo a fim de mostrar toda a página.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{imgFerramenta/edicaoQuestionario}
+	\caption{Resultado não aceito}
+	\label{img:questio_nao_aceito}
+\end{figure}
+
+Caso o usuário aceite o processo, ou após a edição do processo rejeitado, será redirecionado para a página que mostra todas as práticas, suas descrições e qual a rota que mais está sendo utilizada no processo, assim como mostra a figura \ref{img:resultado_processo}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{imgFerramenta/resultado}
+	\caption{Resultado final do processo}
+	\label{img:resultado_processo}
+\end{figure}
+
+Finalmente após o processo aceito e visualizado pelo usuário, o sistema volta para o início, porém agora o processo criado está visível na aba ``\textit{Your projects}'', onde pode ser acessado a qualquer momento para ser consultado quais práticas devem ser seguidas, assim como é mostrado na figura \ref{img:primeira_pag_dps}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{imgFerramenta/primeiraPaginaDepois}
+	\caption{Início depois do primeiro processo cadastrado}
+	\label{img:primeira_pag_dps}
+\end{figure}
