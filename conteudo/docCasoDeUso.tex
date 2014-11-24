@@ -85,11 +85,8 @@ Este caso de uso especifica a ação do sistema de, dada as informações solici
 		A rota a ser utilizada deve estar definida ao final da execução deste caso de uso.
 	\item \textbf{Requisitos Funcionais:}
 		\begin{itemize}
-			\item RF02 - O sistema deve calcular a metodologia ideal para o projeto;
-			\item RF03 - O sistema deve permitir ao usuário escolher a própria metodologia;
-			\item RF07 - O sistema deve ter um menu dropdown em todas as páginas para o usuário acessar seus projetos;
-			\item RF08 - O sistema deve ter um link em todas as páginas para criação de novos projetos;
-			\item RF10 - O sistema deve gerar metodologias novas caso necessário.
+			\item \textbf{RF049} - Fazer relatório com perguntas específicas para definir características do processo;
+			\item \textbf{RF050} - Definir em qual metodologia o processo do cliente se encaixa;
 		\end{itemize}
 	\item \textbf{Requisitos Não Funcionais:}
 		\begin{itemize}
@@ -136,121 +133,103 @@ Este caso de uso especifica a ação do sistema de, dada as informações solici
 \paragraph{Perguntas do questionário}
 \label{sec:perguntas_do_questinario}
 \clearpage
+	\begin{longtable}{|p{3.5cm}|p{3.5cm}|p{3.5cm}|p{3.5cm}|p{2cm}|}
+		\hline
+		%--------------------------
+		\textbf{Pergunta} &
+		\textbf{Práticas tradicionais} &
+		\textbf{Práticas ágeis} &
+		\textbf{Observações} &
+		\textbf{Tipo da pergunta}
+		\\ \hline
+		\endhead
 
+		\hline \multicolumn{5}{|r|}{\longtableendfoot} \\ \hline
+		\endfoot
 
-					\begin{longtable}{|p{3.5cm}|p{3.5cm}|p{3.5cm}|p{3.5cm}|p{2cm}|}
-						\hline
-						%--------------------------
-						\textbf{Pergunta} &
-						\textbf{Práticas tradicionais} &
-						\textbf{Práticas ágeis} &
-						\textbf{Observações} &
-						\textbf{Tipo da pergunta}
-						\\ \hline
-						\endhead
+		% \hline
+		\endlastfoot
+		%--------------------------
 
-						\hline \multicolumn{5}{|r|}{\longtableendfoot} \\ \hline
-						\endfoot
+		A equipe de desenvolivemnto irá mudar durante o projeto? &
+		Requisitos tradicionais, problema, necessidade característica, requisitos funcionais e casos de uso. &
+		Requisitos ágeis, tema de investimento, épicos, features e histórias de usuário. &
+		Em casos no qual a equipe vai mudar durante o projeto, as metodologias ágeis falham em manter a documentação necessária para novos membros se atualizarem de como anda o projeto. &
+		Equipe
+		\\ \hline
 
-						% \hline
-						\endlastfoot
-						%--------------------------
+		%-------------------------
+		Seu cliente estará presente regularmente durante o projeto e ajudando constantemente em elicitar requisitos? &
+		Equipe de desenvolvimento escreve todos os requisitos no início do projeto. &
+		Cliente escreve os requisitos a medida em que o projeto avança. &
+		Em casos no qual o cliente não pode estar presente constantemente no projeto, abordagens ágeis podem vir a ser falhas por haver dificuldades em elicitar requisitos novos e de priorizar os já elicitados. &
+		Equipe
+		\\ \hline
 
-						A equipe de desenvolivemnto irá mudar durante o projeto? &
-						Requisitos tradicionais, problema, necessidade característica, requisitos funcionais e casos de uso. &
-						Requisitos ágeis, tema de investimento, épicos, features e histórias de usuário. &
-						Em casos no qual a equipe vai mudar durante o projeto, as metodologias ágeis falham em manter a documentação necessária para novos membros se atualizarem de como anda o projeto. &
-						Equipe
-						\\ \hline
+		%--------------------------
+		A equipe de desenvolvimento é bem entrosada? &
+		\begin{itemize}
+			\item Processo engessado, sem possibilidades de alterações.
+			\item Gerente atribuindo tarefas.
+		\end{itemize} &
+		\begin{itemize}
+			\item Processo mais livre, baseado em testes feitos pela equipe e reuniões diárias.
+			\item Membros da equipe podendo escolher quais tarefas fazer, uma vez que as mesmas estejam no escopo da sprint.
+		\end{itemize} &
+		Metodologia ágeis requerem uma equipe auto gerenciável e esteja bem entrosada evitando assim retrabalhos por falta de comunicação. &
+		Equipe
+		\\ \hline
+		%----------------------------
+		Sua equipe responde rápido a mudanças? &
+		Requisitos definidos por contrato. &
+		Requisitos abertos a alterações pelo cliente. &
+		Metodologias ágeis, sofrerem muitas mudanças em seus requisitos, necessitam uma equipe que tenha capacidade de reagir rapidamente a alterações de escopo. &
+		Equipe
+		\\ \hline
 
-						%-------------------------
-						Seu cliente estará presente regularmente durante o projeto e ajudando constantemente em elicitar requisitos? &
-						Equipe de desenvolvimento escreve todos os requisitos no início do projeto. &
-						Cliente escreve os requisitos a medida em que o projeto avança. &
-						Em casos no qual o cliente não pode estar presente constantemente no projeto, abordagens ágeis podem vir a ser falhas por haver dificuldades em elicitar requisitos novos e de priorizar os já elicitados. &
-						Equipe
-						\\ \hline
+		%---------------------------
+		Sua equipe de desenvolvimento é experiente? &
+		Nenhuma prática associada. &
+		Codificação em pares. &
+		Equipes mais experientes tendem a se adaptar e produzir melhor em metodologias ágeis pois geralmente eles acabam se tornando auto gerenciaveis e acabam por ter menos dificuldades tanto no relacionamento como na divisão e execução das tarefas. &
+		Equipe
+		\\ \hline
+		%--------------------------
 
-						%--------------------------
-						A equipe de desenvolvimento é bem entrosada? &
-						\begin{itemize}
-							\item Processo engessado, sem possibilidades de alterações.
-							\item Gerente atribuindo tarefas.
-						\end{itemize} &
-						\begin{itemize}
-							\item Processo mais livre, baseado em testes feitos pela equipe e reuniões diárias.
-							\item Membros da equipe podendo escolher quais tarefas fazer, uma vez que as mesmas estejam no escopo da sprint.
-						\end{itemize} &
-						Metodologia ágeis requerem uma equipe auto gerenciável e esteja bem entrosada evitando assim retrabalhos por falta de comunicação. &
-						Equipe
-						\\ \hline
-						%----------------------------
-						Sua equipe responde rápido a mudanças? &
-						Requisitos definidos por contrato. &
-						Requisitos abertos a alterações pelo cliente. &
-						Metodologias ágeis, sofrerem muitas mudanças em seus requisitos, necessitam uma equipe que tenha capacidade de reagir rapidamente a alterações de escopo. &
-						Equipe
-						\\ \hline
+		Seu cliente exige muita documentação? &
+		Documentação acima de código pronto. &
+		Código acima de documentação &
+		Metodologias tradicionais tendem a ter mais documentação que em metodologias ágeis, dependendo do projeto pode ser tanto uma vantagem como uma desvantagem. &
+		Processo.
+		\\ \hline 
+		%-------------------------
 
-						%---------------------------
-						Sua equipe de desenvolvimento é experiente? &
-						Nenhuma prática associada. &
-						Codificação em pares. &
-						Equipes mais experientes tendem a se adaptar e produzir melhor em metodologias ágeis pois geralmente eles acabam se tornando auto gerenciaveis e acabam por ter menos dificuldades tanto no relacionamento como na divisão e execução das tarefas. &
-						Equipe
-						\\ \hline
-						%--------------------------
+		Seu cliente exige entregas contínuas de software? &
+		Iterações longas com muita coisa para entregar. &
+		Sprints de uma a quatro semanas com poucas funcionalidades para entrega porém com valor. &
+		Em projetos tradicionais as entregas são mais espaçadas do que em projetos ágeis considerando a menor quantidade de reuniões disponíveis com o cliente. &
+		Processo.
+		\\ \hline
+		%-----------------------
 
-						Seu cliente exige muita documentação? &
-						Documentação acima de código pronto. &
-						Código acima de documentação &
-						Metodologias tradicionais tendem a ter mais documentação que em metodologias ágeis, dependendo do projeto pode ser tanto uma vantagem como uma desvantagem. &
-						Processo.
-						\\ \hline 
-						%-------------------------
+		Seu projeto é crítico? &
+		Métodos formais. &
+		Nenhuma prática associada &
+		Projetos críticos requerem uma documentação formal com precisão, o que é algo mais simples de se alcaçar em metodologias tradicionais. &
+		Processo.
+		\\ \hline
+		%------------------------
 
-						Seu cliente exige entregas contínuas de software? &
-						Iterações longas com muita coisa para entregar. &
-						Sprints de uma a quatro semanas com poucas funcionalidades para entrega porém com valor. &
-						Em projetos tradicionais as entregas são mais espaçadas do que em projetos ágeis considerando a menor quantidade de reuniões disponíveis com o cliente. &
-						Processo.
-						\\ \hline
-						%-----------------------
+		Os requisitos do projeto mudarão constantemente? &
+		Detalhamento de todos os requisitos no início do projeto. &
+		Apenas detalhar requisitos no momento de implementá-los. &
+		Projetos com mudaças intensas nos requisitos, geralmente tendem a ser projetos ágeis. &
+		Negócio
+		\\ \hline
+	\caption{Perguntas para o projeto}
+	\label{tab:perguntas_projeto}
+	\end{longtable}
 
-						Seu projeto é crítico? &
-						Métodos formais. &
-						Nenhuma prática associada &
-						Projetos críticos requerem uma documentação formal com precisão, o que é algo mais simples de se alcaçar em metodologias tradicionais. &
-						Processo.
-						\\ \hline
-						%------------------------
-
-						Os requisitos do projeto mudarão constantemente? &
-						Detalhamento de todos os requisitos no início do projeto. &
-						Apenas detalhar requisitos no momento de implementá-los. &
-						Projetos com mudaças intensas nos requisitos, geralmente tendem a ser projetos ágeis. &
-						Negócio
-						\\ \hline
-					\caption{Perguntas para o projeto}
-					\label{tab:perguntas_projeto}
-					\end{longtable}
-
-					\begin{enumerate}
-						\item \textbf{Tamanho da equipe:}
-
-							Equipes grandes geralmente possuem uma dificuldade maior em se implementar metodologias ágeis.
-					
-		
-											
-						\item \textbf{Prazo final de entrega:}
-
-							Tempo para o \textit{dead line} do projeto, quanto mais curto o prazo de entrega do projeto menos recomendado é o uso da metodologia tradicional, pois são requeridas entregas rápidas e constantes, alem de código acima de documentação.
-
-						\item \textbf{Quão adaptavél é o seu projeto:}
-							
-							Os requisitos estão bem elicitados? se sim qual o seu entendimento do negocio, pois quanto maior o seu entendimento a respeito do negocio do cliente, menor será sua necessidade de recorrer a ele para solucionar duvidas.
-					\end{enumerate}
-	
 \subsubsection{Caso de Uso - UC1.4.1.1 - Definir ``hibridez'' do projeto}
 \paragraph{Descrição:}
 Este caso de uso auxilia a descobrir quão hibrido é o projeto proposto pelo cliente quais as caracteristicas ágeis e quais caracteristícas tradicionais que irão compor a "hibridez" do projeto.
